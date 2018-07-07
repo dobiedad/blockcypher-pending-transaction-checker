@@ -1,4 +1,4 @@
-const httpism = require("httpism");
+const axios = require("axios");
 
 class BlockcypherPendingTransactionChecker {
   constructor({
@@ -22,7 +22,8 @@ class BlockcypherPendingTransactionChecker {
             this._address
           }`
         )
-        .then(data => {
+        .then(res => {
+          const data = res.data;
           const pendingTransactionMatchingValue = this.getTransactionMatchingValue(
             data.unconfirmed_txrefs,
             amountToRecieve
