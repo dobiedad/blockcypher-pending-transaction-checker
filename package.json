@@ -1,0 +1,17 @@
+{
+  "name": "blockcypher-pending-transaction-checker",
+  "version": "1.0.0",
+  "description": "Blockcypher pending transaction checker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blockcypher",
+    "bitcoin",
+    "litecoin",
+    "blockchain"
+  ],
+  "author": "dobiedad",
+  "license": "ISC"
+}
